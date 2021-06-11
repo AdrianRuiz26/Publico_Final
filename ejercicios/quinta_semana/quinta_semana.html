@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Quinta Semana</title>
+
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
+
+	<!-- una hoja de estilos externa-->
+
+	<!-- una hoja de estilos personalizada-->
+	<link href="quinta_semana.css" rel="stylesheet" />
+
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+
+
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+
+
+	<!-- scripts personalizados Javascript o JQuery -->
+
+</head>
+
+
+<div>
+    <div class="centrarElementosLi">
+		<ul id="menuhorizontal">
+			<li><a href="https://adrianruiz26.github.io/CMV-publico/index.html">Volver a pagina principal</a></li>
+		</ul>
+	</div>
+	<h1 class="titulo">Multimedia, Canvas y SVG</h1>
+
+
+
+	<div style="text-align: center; width: 80%; margin: auto;">
+		<video src="video.mp4" height="300" width="600" controls crossorigin>
+			<track kind="subtitles" src="subtitles.vtt" srclang="es" label="spanish" default>
+			<p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a>
+				instead.</p>
+		</video>
+		<div>
+			<h1>Prueba tus cascos!</h1>
+			<video controls crossorigin>
+				<source src="audio.mp3" type="audio/mp3">
+				<track kind="captions" src="subtitles.vtt" srclang="es" label="spanish">
+				<p>Your browser doesn't support HTML5 audio. Here is a <a href="audio.mp3">link to the audio</a>
+					instead.</p>
+			</video>
+		</div>
+	</div>
+
+
+	<div style="text-align: center; width: 100%; margin: auto; display: flex; justify-content: center;">
+		<div>
+		<p>Mi Canvas</p>
+		<canvas id="micanvas" width="300" height="200" style="border:1px solid #000;">
+			Your browser does not support the HTML canvas tag.
+		</canvas>
+		</div>
+		<div>
+			<p>Mi SVG</p>
+		<svg width="300" height="200" style="border: 1px solid #000;">
+
+			<rect width="100%" height="100%" fill="red" />
+
+			<circle cx="150" cy="100" r="80" fill="green" />
+
+			<text x="150" y="125" font-size="60" text-anchor="middle" fill="white">ADRI</text>
+
+		</svg>
+	</div>
+	</div>
+	<script>
+		var c = document.getElementById("micanvas");
+		var cxt = c.getContext("2d");
+
+		// Dijujamos un castillo
+		cxt.beginPath();
+		cxt.moveTo(30,30);
+		cxt.lineTo(40,30);
+		cxt.lineTo(40,40);
+		cxt.lineTo(50,40);
+		cxt.lineTo(50,30);
+		cxt.lineTo(60,30);
+		cxt.lineTo(60,40);
+		cxt.lineTo(70,40);
+		cxt.lineTo(70,30);
+		cxt.lineTo(80,30);
+		cxt.lineTo(80,40);
+		cxt.lineTo(90,40);
+		cxt.lineTo(90,30);
+		cxt.lineTo(100,30);
+		cxt.lineTo(100,90);
+		cxt.lineTo(30,90);
+		cxt.closePath(); // Cierra la figura como si usasemos cxt.lineTo(30,50);
+		cxt.stroke();
+
+		// Dibujamos el palo de la bandera
+		cxt.strokeStyle = "brown";
+		cxt.beginPath();
+		cxt.moveTo(55,30);
+		cxt.lineTo(55,10);
+		cxt.stroke();
+
+		// Dibujamos una bandera
+		cxt.fillStyle = "green";
+		cxt.beginPath();
+		cxt.moveTo(55,10);
+		cxt.lineTo(65,15);
+		cxt.lineTo(55,20);
+		cxt.fill();  // Cierra la figura y rellena
+
+		// Dibujamos la puerta
+		cxt.fillStyle = "brown";
+		cxt.beginPath();
+		cxt.moveTo(55,90);
+		cxt.lineTo(55,75);
+		cxt.lineTo(65,70);
+		cxt.lineTo(75,75);
+		cxt.lineTo(75,90);
+		cxt.closePath(); // Cierra la figura
+		cxt.fill(); // Y la rellena
+
+	</script>
+	</body>
+</html>

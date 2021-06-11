@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(0, 237, 255, 26%);
+}
+/* CSS Para la Navbar */
+#menuhorizontal {
+  list-style-type: none;
+  display: table;
+  margin: 0 auto;
+}
+#menuhorizontal a {
+  color: white;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Estilos para centrar elementos del navbar*/
+.centrarElementosLi {
+  margin: auto;
+  width: 100%;
+  background: #004b98;
+  padding: 1%;
+}
+
+#menuhorizontal li {
+  margin-right: 15px;
+  float: left;
+}
+
+#menuhorizontal a:hover {
+  border-radius: 10px;
+  background-color: #336699;
+}
+
+/*CSS Para la seccion de las imágenes*/
+div.centrado {
+  text-align: center;
+}
+
+img.imagenes {
+  width: 100%;
+  height: 400px;
+}
+
+.contenedorImagenes:hover {
+  transform: scale(1.05);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+
+  z-index: 10;
+}
+
+.divParrafo {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 5rem;
+}
+
+.divParrafo:hover {
+  background-color: #004b98;
+  color: white;
+}
+
+.botonModoNoche {
+  background-color: #07afcc; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.botonModoNoche:hover {
+  background-color: white; /* Green */
+  color: #07afcc;
+}
+
+.iconoModoNoche {
+  width: 15%;
+}
+
+body.modoNoche {
+  background-color: rgba(0, 0, 0, 0.527);
+}
+#header.modoNoche {
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+#pie.modoNoche {
+  color: white;
+}
+#divParrafo.modoNoche:hover {
+  background-color: rgba(44, 38, 38, 0.418);
+}
+#subtitulo.modoNoche {
+  background-color: rgba(0, 0, 0, 0.527);
+}
+#botonModoNoche.modoNoche {
+  background-color: rgba(255, 255, 255, 0.418);
+}
+#menuhorizontal.modoNoche a:hover {
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+.subtitulo {
+  position: relative;
+  bottom: 40px;
+  color: #ffffff;
+  font-size: 2em;
+  background-color: #004c984b;
+}
+
+.contenedorImagenes {
+  width: 32%;
+  margin: 0.5%;
+  display: inline-block;
+  transition: box-shadow 0.4s ease-in-out;
+  transition: transform 0.4s ease;
+  height: 400px;
+}
+
+.marco {
+  display: grid;
+  border-style: solid;
+  border-color: red;
+  grid-template-columns: 250px repeat(3, 1fr);
+  grid-template-rows: 150px 40px auto 40px;
+  grid-gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.encabezado {
+  border-style: solid;
+  border-color: blue;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+}
+
+.migas {
+  border-style: solid;
+  border-color: yellow;
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+}
+
+.lado {
+  border-style: solid;
+  border-color: violet;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.contenido {
+  border-style: solid;
+  border-color: violet;
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 1;
+}
+
+.pie {
+  border-style: solid;
+  border-color: aqua;
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 1;
+}
+
+@media screen and (max-width: 1500px) {
+  div.contenedorImagenes {
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    margin-bottom: 5rem;
+  }
+
+  .divParrafo {
+    margin-top: 15rem;
+  }
+
+  .lado {
+    display: none;
+  }
+  .contenido {
+    grid-column: 1 / span 4;
+  }
+}

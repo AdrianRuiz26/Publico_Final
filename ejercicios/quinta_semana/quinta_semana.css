@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  
+}
+body{
+  background-color: rgb(0, 237, 255, 26%);
+}
+/* CSS Para la Navbar */
+#menuhorizontal {
+    list-style-type:none;
+    display: table;
+    margin: 0 auto;
+  }
+  #menuhorizontal a {
+    background: #004b98;
+    color: white;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  /* Estilos para centrar elementos del navbar*/
+  .centrarElementosLi {
+    margin: auto;
+    background: #004b98;
+    padding: 1%;
+    margin-bottom: 2rem;
+  }
+  
+  #menuhorizontal li {
+      margin-right: 15px;
+    float:left;
+  }
+  
+  #menuhorizontal a:hover {
+    border-radius: 10px;
+    background-color:#336699;
+  }
+
+
+  h1.titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+
+
+
+
+

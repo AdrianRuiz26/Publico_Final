@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercera Semana 1</title>
+    <link href="less.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+</head>
+
+<body id="body">
+
+
+<div class="marco">
+    <div class="encabezado">
+        <div id="header">
+        <ul id="menuhorizontal">
+            <button id="botonModoNoche"><img src="img/moon-icon.png" alt="icono"><span>Modo Noche</span></button>
+            <li><a href="#">Elemento 1</a></li>
+            <li><a href="#">Elemento 2</a></li>
+            <li><a href="#">Elemento 3</a></li>
+            <li><a href="#">Elemento 4</a></li>   
+            </ul>
+            
+        </div>
+    </div>
+    <div class="migas">Migas de pan (ruta)</div>
+<div class="lado">Lado</div>
+<div class="contenido">
+    <div>
+        <div class="contenedorDeImagenes">    
+            <img alt="img1" src="img/portatil_1.jpg">
+            <div id="subtitulo">subtitulosubtitulosubtitulo</div>
+        </div>
+        <div class="contenedorDeImagenes">  
+            <img alt="img2" src="img/portatil_2.jpg">
+            <div id="subtitulo">subtitulosubtitulosubtitulo</div>    
+        </div>
+
+        <div class="contenedorDeImagenes">    
+            <img alt="img3" src="img/portatil_3.jpg">
+            <div id="subtitulo">subtitulosubtitulosubtitulo</div>    
+        </div>
+    </div>
+</div>
+    
+    <div id="pie">
+    <div id="divParrafo">
+        <h1>Esto es un título</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+        the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum.</p>
+    </div>
+    </div>
+</div>
+    
+    <script>
+
+            $("button").click(function(){
+                $("body, #header, #pie, #subtitulo, #botonModoNoche, #divParrafo, #menuhorizontal").toggleClass("modoNoche");
+            });
+    
+</script>
+</body>
+</html>
